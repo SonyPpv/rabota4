@@ -1,0 +1,76 @@
+Sub Fi()
+    Dim n As Integer
+    Dim max As Double
+    Dim i As Double
+    
+n = InputBox("Введите количество чисел для сравнения (3, 4 или 5):")
+max = Int(Rnd * 100)
+MsgBox "Сгенерированное число 1: " & max
+i = Int(Rnd * 100)
+MsgBox "Сгенерированное число 2: " & i
+
+If i > max Then max = i
+i = Int(Rnd * 100)
+MsgBox "Сгенерированное число 3: " & i
+
+If i > max Then max = i
+If n >= 4 Then
+i = Int(Rnd * 100)
+MsgBox "Сгенерированное число 4: " & i
+
+If i > max Then max = i
+End If
+  
+If n = 5 Then
+i = Int(Rnd * 100)
+MsgBox "Сгенерированное число 5: " & i
+If i > max Then max = i
+End If
+
+ 
+MsgBox "Максимальное значение: " & max
+End Sub
+
+
+
+
+Sub Fi()
+    Dim n As Integer
+    Dim max As Double
+    Dim i As Double
+    
+n = InputBox("Ââåäèòå êîëè÷åñòâî ÷èñåë äëÿ ñðàâíåíèÿ (3, 4 èëè 5):")
+
+max = Int(Rnd * 100)
+MsgBox "Ñãåíåðèðîâàííîå ÷èñëî 1: " & max
+
+   
+i = Int(Rnd * 100)
+MsgBox "Ñãåíåðèðîâàííîå ÷èñëî 2: " & i
+If i > max Then max = i
+
+i = Int(Rnd * 100)
+MsgBox "Ñãåíåðèðîâàííîå ÷èñëî 3: " & i
+If i > max Then max = i
+
+ 
+If n >= 4 Then
+i = Int(Rnd * 100)
+MsgBox "Ñãåíåðèðîâàííîå ÷èñëî 4: " & i
+If i > max Then max = i
+End If
+
+  
+If n = 5 Then
+i = Int(Rnd * 100)
+MsgBox "Ñãåíåðèðîâàííîå ÷èñëî 5: " & i
+If i > max Then max = i
+End If
+
+ 
+MsgBox "Ìàêñèìàëüíîå çíà÷åíèå: " & max
+End Sub
+
+
+
+
